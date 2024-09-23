@@ -17,7 +17,7 @@ const HomePage = ({ selectedDate }) => {
   const [dummyData, setDummyData] = useState([]);
 
   useEffect(() => {
-    fetch('dummy.json') // Replace 'dummyData.json' with the actual file name
+    fetch('dummy.json') 
       .then(response => response.json())
       .then(data => setDummyData(data))
       .catch(error => console.error('Error fetching data:', error));
